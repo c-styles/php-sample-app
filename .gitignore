@@ -1,0 +1,23 @@
+/vendor/*
+#サンプルなので残しておく
+#/config/app.php
+/tmp/*
+/logs/*
+
+
+#IDE
+.idea
+
+# Berkshelf
+/cookbooks/
+.vagrant/
+Berksfile.lock
+
+#test-kitchen
+.kitchen/
+.kitchen.local.yml
+
+
+#Keep Directory
+!.gitkeep
+!empty
