@@ -1,4 +1,4 @@
-name             'vagrant-opsworks-deploy'
+name             'php-sample-app'
 maintainer       'YOUR_COMPANY_NAME'
 maintainer_email 'YOUR_EMAIL'
 license          'All rights reserved'

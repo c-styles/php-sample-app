@@ -3,7 +3,7 @@ source "https://supermarket.getchef.com"
 metadata
 
 
-cookbook 'opsworks-custom-cookbooks', git: "https://github.com/c-styles/opsworks-custom-cookbooks.git", branch: "master"
+cookbook 'opsworks-wrapper-cookbooks', git: "https://github.com/c-styles/opsworks-wrapper-cookbooks.git", branch: "master"
 #nest
 cookbook 'apt'
 cookbook 'yum'

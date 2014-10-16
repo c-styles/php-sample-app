@@ -6,7 +6,7 @@
   "environment":"development",
   "run_list":[
     "role[php-web-server]",
-    "recipe[opsworks-custom-cookbooks::webmin-setup]"
+    "recipe[opsworks-wrapper-cookbooks::webmin-setup]"
   ],
   "deploy" : {
     "sample-app" : {
@@ -28,5 +28,8 @@
         "need_reload" : false
       }
     }
+  },
+  "opsworks_custom_cookbooks": {
+    "berkshelf_version": "3.1.3"
   }
 }

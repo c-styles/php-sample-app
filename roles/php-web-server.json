@@ -5,18 +5,15 @@
   "default_attributes": {
   },
   "run_list": [
-    "recipe[opsworks-custom-cookbooks::update-repository]",
-    "recipe[opsworks-custom-cookbooks::apache2-preinstall]",
-    "recipe[opsworks-custom-cookbooks::imagemagick-setup]",
-    "recipe[opsworks-custom-cookbooks::mcrypt-setup]",
-    "recipe[mod_php5_apache2]",
-    "recipe[opsworks-custom-cookbooks::deploy-php]"
+    "recipe[opsworks-wrapper-cookbooks::update-repository]",
+    "recipe[opsworks-wrapper-cookbooks::mod_php5_apache2]",
+    "recipe[opsworks-wrapper-cookbooks::deploy-php]"
   ],
   "description": "",
   "override_attributes": {
     "apache":{
       "user":"deploy",
-      "group":"deploy"
+      "group":"apache"
     }
   }
 }

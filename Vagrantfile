@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   application_path="./"
   deploy_user='deploy'
-  deploy_group='deploy'
+  deploy_group='apache'
 
   CHEF_NODES_PATH=File.dirname(__FILE__) + "/nodes/"
   Dir::glob("#{CHEF_NODES_PATH}*.json").each do |file|
